@@ -1,0 +1,132 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#loader{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(144, 238, 144);
+    position: fixed;
+    z-index: 9999;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #loader h1{
+    font-size: 130px;
+    font-family: monument;
+    text-transform: uppercase;
+    z-index: 99999;
+    word-spacing: 30px;
+    color: #000;
+    position: relative;
+  } 
+
+  #loader h1::before{
+    content: "bubble game";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    color: transparent;
+    left: -50px;
+    top: -60px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+
+  }
+ 
+
+
+
+
+
+
+
+
+#Bubble-Page{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(196, 235, 199) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#panel{
+    width: 85%;
+    height: 85%;
+    background-color:#fff ;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#p-top{
+    width: 100%;
+    height: 100px;
+    padding:0px 30% ;
+    background-color: #82b784;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.elem{
+    font-size: 14px;
+    font-weight: 500;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 20px;
+}
+
+.box{
+    font-size: 22px;
+    font-weight: 700;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: #82b784;
+    border-radius: 5px;
+}
+
+#p-botm{
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Bubble{
+    
+    width: 50px;
+    height: 50px; 
+     background: #82b784; 
+     border-radius: 50%;
+     font-size: 19px;
+    font-weight: 600;
+     display: flex;
+    align-items: center;
+    justify-content: center; 
+    color: #fff;
+
+}
+
+.Bubble:hover{
+    cursor: pointer;
+    background-color: #9ab99a;
+}
